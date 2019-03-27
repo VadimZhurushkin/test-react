@@ -1,0 +1,33 @@
+@import './colors';
+@import './sizes';
+
+.leftColumn, .rightColumn {
+  max-height: 100vh;
+  height: 100vh;
+}
+
+.leftColumn {
+  max-height: 100vh;
+  float: left;
+  width: 200px;
+  z-index: 2;
+}
+
+.rightColumn {
+  width: calc(100vw - 200px);
+  margin-left: 200px;
+  z-index: 2;
+}
+
+body {
+  background: $white;
+  font-size: $baseFontSize;
+  color: $darkGrey;
+  overflow: hidden;
+}
+
+.PageContent {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}

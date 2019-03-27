@@ -1,0 +1,30 @@
+@import './../../colors';
+@import './../../sizes';
+
+.Dropdown {
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: $baseControlHeight;
+  height: $baseControlHeight;
+  vertical-align: top;
+  select {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $ligth_gray;
+    outline: none;
+    text-overflow: ellipsis;
+    min-width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    line-height: $baseControlHeight;
+    font-size: $baseFontSize;
+    padding: 0 3px;
+  }
+  select[disabled] {
+    background: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }
+}

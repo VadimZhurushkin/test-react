@@ -1,0 +1,15 @@
+.Filter .Label {
+  min-width: 80px;
+}
+
+.Filter > div {
+  margin: 8px;
+}
+
+.Filter {
+  .Dropdown,
+  .TextBox {
+    margin-left: 8px;
+    width: calc(100% - 96px);
+  }
+}

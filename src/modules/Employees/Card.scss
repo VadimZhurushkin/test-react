@@ -1,0 +1,15 @@
+@import './../../colors';
+@import './../../sizes';
+
+.userCard {
+  .TextBox, .Dropdown {
+    width: 100%;
+  }
+}
+
+.userCard > div {
+  margin: $baseElementMargin;
+}
+.userCard .CheckBox {
+  margin-left: 8px;
+}

@@ -1,0 +1,9 @@
+@import './../../colors';
+@import './../../sizes';
+
+.Label {
+  display: inline-block;
+  height: $baseControlHeight;
+  line-height: $baseControlHeight;
+  font-size: $baseFontSize;
+}

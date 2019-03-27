@@ -1,0 +1,83 @@
+@import './../../colors';
+@import './../../sizes';
+
+.popup {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #cecece;
+    box-shadow: 0 0 10px #ccc;
+    background: $white;
+    text-align: left;
+
+  .header {
+    height: $popupHeaderSize;
+    padding: $popupHeaderPadding;
+    border-bottom: 1px solid $ligth_gray;
+    background: $message;
+    .title {
+      color: $darkGrey;
+      font-size:$popupHeaderTitleFontSize;
+      font-weight:$popupHeaderTitleFontWeigth;
+    }
+    .edit,
+    .save {
+      position: absolute;
+      right: $buttonIconSizeMediumWidth + 8px;
+    }
+    .ok {
+       float: right;
+    }
+    .close {
+      background: $white;
+      border: 1px solid $ligth_gray;
+      position: absolute;
+      top: 4px;
+      right: -1px;
+    }
+    .close:hover {
+      background: #fff;
+    }
+  }
+
+  .body {
+    .content {
+      height: 60px;
+      text-align: center;
+      padding: 16px;
+      font-size: $baseFontSize;
+    }
+  }
+}
+
+.popup.noShadow {
+  box-shadow: none;
+}
+
+.popup.stack {
+  position: fixed;
+  min-width: $minStackWidth;
+  border: none;
+  border-left: 1px solid #cecece;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  min-height: 100vh;
+}
+
+.popup.error {
+  .header {
+    background: $errorColor;
+  }
+}
+
+.popup.success {
+  .header {
+    background: $success;
+  }
+}
+
+.popup.alarm {
+  .header {
+    background: $alarm;
+  }
+}

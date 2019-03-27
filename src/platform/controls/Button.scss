@@ -1,0 +1,68 @@
+@import './../../colors';
+@import './../../sizes';
+
+.button {
+  color: $blueColor;
+  font-size: $buttonsTextSize;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button.border {
+  color: $darkGrey;
+  line-height: $baseControlsLH;
+  vertical-align: top;
+  padding: $borderButtonPaddings;
+  border-radius: $buttonBorderRadius;
+}
+
+.button.border.primary {
+  border: 1px solid $primary;
+  background: $buttonPrimaryBG;
+}
+
+.button.border.primary:hover {
+  border: 1px solid $primary;
+  background: #fff;
+}
+
+.button.border.success {
+  border: 1px solid $primary;
+  background: $buttonSuccessBG;
+}
+
+.button.border.error {
+  border: 1px solid $primary;
+  background: $buttonErrorBG;
+}
+
+.button.border.alarm {
+  border: 1px solid $primary;
+  background: $buttonAlarmBG;
+}
+
+.icon-button {
+  vertical-align: top;
+  text-align: center;
+}
+.icon-button.small {
+  width: $buttonIconSizeSmallWidth;
+  height: $buttonIconSizeSmallHeight;
+  font-size: $buttonsTextSmallSize;
+  line-height: $buttonIconSizeSmallHeight;
+}
+
+.icon-button.medium {
+  width: $buttonIconSizeMediumWidth;
+  height: $buttonIconSizeMediumHeight;
+  font-size: $buttonsTextMediumSize;
+  line-height: $buttonIconSizeMediumHeight;
+}
+
+.icon-button.big {
+  width: $buttonIconSizeBigWidth;
+  height: $buttonIconSizeBigHeight;
+  font-size: $buttonsTextBigSize;
+  line-height: $buttonsTextBigSize;
+}

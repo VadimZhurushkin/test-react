@@ -1,0 +1,13 @@
+.Employees {
+  .Table {
+    width: 100%;
+  }
+}
+
+.CommandPanel {
+  height: 24px;
+  .filterButton {
+    position: absolute;
+    right: 20px;
+  }
+}

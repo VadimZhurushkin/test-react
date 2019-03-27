@@ -1,0 +1,16 @@
+@import './../../colors';
+@import './../../sizes';
+
+.CheckBox {
+  display: inline-block;
+  min-width: $baseControlHeight;
+  height: $baseControlHeight;
+  box-sizing: border-box;
+
+  input {
+    width: $baseFontSize;
+    height: $baseFontSize;
+    vertical-align: top;
+    margin: 5px;
+  }
+}

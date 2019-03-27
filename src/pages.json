@@ -1,0 +1,11 @@
+[{
+  "Id": "employees",
+  "component": "modules/Employees/Page.js",
+  "path": "/employees/",
+  "title": "Сотрудники"
+},{
+  "Id": "index",
+  "component": "modules/Employees/Page.js",
+  "path": "/",
+  "title": "Сотрудники"
+}]
